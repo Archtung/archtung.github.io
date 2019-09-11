@@ -1046,6 +1046,7 @@ a {
 }
 
 .waxom-counters-txt {
+    display: block;
     font-family: Montserrat-light;
     font-size: 14px;
     line-height: 20px;
