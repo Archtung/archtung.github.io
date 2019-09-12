@@ -1728,12 +1728,12 @@ a {
     font-size: 30px;
 }
 
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .container{
-        width: 500px;
+        width: 440px;
     }
     .header {
-        width: 500px;
+        width: 440px;
         min-height: 150px;
     }
 
@@ -1757,7 +1757,7 @@ a {
     }
 
     .services {
-        width: 500px;
+        width: 440px;
         padding: 0;
     }
 
@@ -1783,13 +1783,13 @@ a {
     }
 
     .latest-projects {
-        width: 500px;
+        width: 440px;
         padding: 0;
         margin: 0;
     }
 
     .project-latest-txt {
-        width: 480px;
+        width: 400px;
     }
 
     .latest-project-menu {
@@ -1806,7 +1806,7 @@ a {
 
     .waxom-mobile {
         background: none;
-        width: 500px;
+        width: 440px;
         padding: 0 10px;
     }
 
@@ -1815,7 +1815,7 @@ a {
     }
 
     .waxom-mobile-txt {
-        width: 480px;
+        width: 400px;
     }
 
     .counters {
@@ -1823,11 +1823,11 @@ a {
     }
 
     .recent-posts {
-        width: 500px;
+        width: 440px;
         padding: 50px 0;
     }
     .recent-posts-txt{
-        width: 480px;
+        width: 400px;
     }
     .recent-posts-cards-wrapper {
         flex-wrap: wrap;
@@ -1841,7 +1841,7 @@ a {
         width: 300px;
     }
     .partners{
-        width: 500px;
+        width: 440px;
         background-size: cover;
         padding: 50px 0;
     }
@@ -1853,14 +1853,14 @@ a {
         margin: 0 30px 0 0;
     }
     .footer{
-        width: 500px;
+        width: 440px;
         padding: 0;
     }
     .footer-wrapper{
         display: none;
     }
     .footer-copyright{
-        width: 500px;
+        width: 440px;
         padding: 30px 10px;
     }
 }
