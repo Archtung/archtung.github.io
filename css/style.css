@@ -1728,7 +1728,7 @@ a {
     font-size: 30px;
 }
 
-@media (min-width: 320px) and (max-width: 520px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .container{
         width: 440px;
     }
