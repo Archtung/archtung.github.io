@@ -1293,10 +1293,12 @@ a {
     align-items: center;
     flex-wrap: wrap;
 }
-.partners-links:hover .partners-img{
+
+.partners-links:hover .partners-img {
     -webkit-transform: scale(1.02, 1.02);
-            transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
 }
+
 .footer {
     display: block;
     width: 100%;
@@ -1545,10 +1547,12 @@ a {
 .footer-widget-img:nth-child(2) {
     margin: 0 0 10px 0;
 }
-.footer-widget-img:hover{
+
+.footer-widget-img:hover {
     -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
+
 .footer-copyright {
     display: flex;
     justify-content: space-between;
@@ -1598,4 +1602,265 @@ a {
 
 .footer-copyright-designed-envanto {
     color: #959595;
+}
+
+.burger {
+    display: none;
+}
+
+.menu-toggle {
+    display: block;
+    position: relative;
+    top: 9px;
+    left: -5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu-toggle input {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    -webkit-touch-callout: none;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    z-index: 1;
+    border-radius: 4px;
+    position: relative;
+    background: #fff;
+    margin-bottom: 7px;
+    -webkit-transform-origin: 4px 0px;
+    transform-origin: 4px 0px;
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.menu-toggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    transition: width, 0.5s;
+}
+
+
+.menu-toggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    width: 40px;
+    transition: width, 0.5s;
+}
+
+.menu-toggle input:checked~span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(0px, 0px);
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #fff;
+    width: 36px;
+    transition: width, 0.5s;
+}
+
+.menu-toggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-toggle input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    -webkit-transform: rotate(-45deg) translate(0, 0px);
+    transform: rotate(-45deg) translate(0, 0px);
+    width: 36px;
+}
+
+.burger-menu-elem {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    margin: -100px 0 0 -60px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #1a1514;
+    list-style-type: none;
+    -webkit-transform: translate(-100%, 0%);
+    transform: translate(-100%, 0%);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.burger-menu-links {
+    font-family: Montserrat-light;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.menu-toggle input:checked~ul {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+.burger-menu-elem li {
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+@media (max-width: 575.98px) {
+    .container{
+        width: 500px;
+    }
+    .header {
+        width: 500px;
+        min-height: 150px;
+    }
+
+    .header-navbar-wrapper {
+        padding: 0 50px;
+    }
+
+    .header-logo {
+        float: left;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header-menu,
+    .header-cart,
+    .header-search,
+    .slider {
+        display: none;
+    }
+
+    .services {
+        width: 500px;
+        padding: 0;
+    }
+
+    .services-card {
+        padding: 40px 10px 40px 10px;
+        width: 400px;
+    }
+
+    .development {
+        margin: 0;
+    }
+
+    .customization {
+        margin: 0;
+    }
+
+    .waxom-realization {
+        display: none;
+    }
+
+    .purchase {
+        display: none;
+    }
+
+    .latest-projects {
+        width: 500px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-latest-txt {
+        width: 480px;
+    }
+
+    .latest-project-menu {
+        display: none;
+    }
+
+    .latest-product-card-wrapper {
+        justify-content: center;
+    }
+
+    .video-presentation {
+        display: none;
+    }
+
+    .waxom-mobile {
+        background: none;
+        width: 500px;
+        padding: 0 10px;
+    }
+
+    .waxom-mobile-desc {
+        float: none;
+    }
+
+    .waxom-mobile-txt {
+        width: 480px;
+    }
+
+    .counters {
+        display: none;
+    }
+
+    .recent-posts {
+        width: 500px;
+        padding: 50px 0;
+    }
+    .recent-posts-txt{
+        width: 480px;
+    }
+    .recent-posts-cards-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .recent-posts-cards-wrapper>.recent-posts-card:nth-child(2) {
+        margin: 0;
+    }
+    .recent-posts-card-txt{
+        width: 300px;
+    }
+    .partners{
+        width: 500px;
+        background-size: cover;
+        padding: 50px 0;
+    }
+    .partners-wrapper{
+        justify-content: center;
+    }
+    .partners-links:nth-child(1),
+    .partners-links:nth-child(3){
+        margin: 0 30px 0 0;
+    }
+    .footer{
+        width: 500px;
+        padding: 0;
+    }
+    .footer-wrapper{
+        display: none;
+    }
+    .footer-copyright{
+        width: 500px;
+        padding: 30px 10px;
+    }
 }
