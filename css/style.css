@@ -1629,7 +1629,7 @@ label {
     display: none
 }
 
-@media (max-width: 575px) {
+@media (max-width: 480px) {
     .container {
         width: 440px;
     }
