@@ -1672,7 +1672,6 @@ label {
     .header-navbar {
         display: none;
         position: absolute;
-        right: 21px;
         top: 90px;
         background-color: #362f2d;
         padding: 0;
@@ -1680,7 +1679,7 @@ label {
     }
 
     .header-menu {
-        width: 200px
+        width: 440px;
     }
 
     .header-menu-items {
